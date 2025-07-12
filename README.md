@@ -1,25 +1,42 @@
 # OOP_N05_T3_2025_GROUP_LONG_QUAN
-Ứng dụng quản lý Quán Ăn
+# 📚 Quản Lý Quán Ăn
 
+## 🧾 Mô Tả Dự Án
+Đây là ứng dụng quản lý quán ăn cơ bản được viết bằng ngôn ngữ Java. Ứng dụng cho phép quản lý khách hàng, thực đơn món ăn, và hóa đơn thanh toán.
 
+---
 
-# Describe and Analyse the Project
+# 🔍 Các Chức Năng Chính
+- Nhập thông tin khách hàng
+- Hiển thị menu món ăn
+- Chọn món ăn và số lượng
+- Tính tổng hóa đơn
+- Hiển thị chi tiết hóa đơn
 
-Đối Tượng:
+---
 
+# 🧱 Các Đối Tượng Chính (Class)
+# 1. KhachHang – Đại diện cho khách hàng
+- Thuộc tính: họ tên, số điện thoại
+- Phương thức: khởi tạo thông tin khách hàng, getter/setter
 
+# 2. MonAn – Đại diện cho món ăn
+- Thuộc tính: tên món ăn, giá tiền
+- Phương thức: khởi tạo món ăn, getter/setter
 
-  Khách Hàng<br>
-  Món Ăn<br>
-  Giao Dịch(Khách Hàng Ăn Đồ Ăn)
-  
+# 3. HoaDon – Quản lý hóa đơn
+- Thuộc tính: thông tin khách hàng, danh sách món ăn và số lượng
+- Phương thức: thêm món vào hóa đơn, tính tổng tiền, in hóa đơn
 
+---
 
+## 📘 Hướng Dẫn Sử Dụng
+1. Nhập tên và số điện thoại khách hàng
+2. Chọn món ăn từ menu
+3. Nhập số lượng từng món
+4. Hệ thống sẽ hiển thị hóa đơn chi tiết sau khi hoàn tất
 
-  # Thành Viên:
+---
 
-  Long(Mã Sv:24108169)<br>
-  Quân(Mã SV:24107547)<br>
-  Nguyễn Lệ Thu
-  
-<img width="1154" height="627" alt="image" src="https://github.com/user-attachments/assets/531dcbaf-56c9-4d77-ab76-96063ac32fe6" />
+## 📌 Sơ Đồ Lớp (Class Diagram)
+
