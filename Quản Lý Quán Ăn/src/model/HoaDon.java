@@ -1,3 +1,5 @@
+
+package model;
 import java.util.ArrayList;
 
 public class HoaDon {
@@ -25,12 +27,13 @@ public class HoaDon {
         for (int i = 0; i < dsMon.size(); i++) {
             MonAn mon = dsMon.get(i);
             int sl = soLuong.get(i);
-            double tien = mon.gia * sl;
-            System.out.println(mon.ten + " x " + sl + " = " + tien + " VND");
+            double tien = mon.getGia() * sl;
+
+            System.out.println(mon.getTen() + " x " + sl + " = " + tien + " VND");
             tong += tien;
         }
 
-        System.out.println("------------------------");
+        System.out.println("----------------------");
         System.out.println("TỔNG TIỀN: " + tong + " VND");
     }
 }
