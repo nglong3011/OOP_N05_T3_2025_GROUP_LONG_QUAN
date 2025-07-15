@@ -46,4 +46,5 @@
 ---
 
 ## 📌 Sơ Đồ Lớp (Class Diagram)
+<img width="1329" height="623" alt="image" src="https://github.com/user-attachments/assets/71605878-0d68-453f-9c9a-eaaedf1fcd70" />
 
