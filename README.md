@@ -28,6 +28,13 @@
 - Thuộc tính: thông tin khách hàng, danh sách món ăn và số lượng
 - Phương thức: thêm món vào hóa đơn, tính tổng tiền, in hóa đơn
 
+# 4. DoUong – Đại diện cho đồ uống
+
+-Thuộc tính: tên đồ uống, giá tiền
+-Phương thức: khởi tạo đồ uống, getter/setter
+
+
+
 ---
 
 ## 📘 Hướng Dẫn Sử Dụng
