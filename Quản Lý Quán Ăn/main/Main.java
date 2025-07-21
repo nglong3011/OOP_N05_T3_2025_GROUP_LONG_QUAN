@@ -14,7 +14,8 @@ public class Main {
         System.out.print("Nhập SĐT: ");
         String sdt = sc.nextLine();
 
-        danhSachKH.add(new KhachHang(ma, ten, sdt));
+        danhSachKH.add(new KhachHang(ten, sdt));
+
     }
 
     public static void hienThiDanhSachKH() {
@@ -41,10 +42,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Ví dụ test:
+       
         themKhachHang();
         hienThiDanhSachKH();
-        capNhatKhachHang("KH01"); // sửa bằng mã bạn nhập ở trên
+        capNhatKhachHang("KH01"); 
         hienThiDanhSachKH();
     }
 }

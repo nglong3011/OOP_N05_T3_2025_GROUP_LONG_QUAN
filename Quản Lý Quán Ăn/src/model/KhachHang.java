@@ -1,41 +1,38 @@
 package model;
 
 public class KhachHang {
-    private String maKH;
     private String ten;
-    private String soDienThoai;
-    public KhachHang(String maKH, String ten, String soDienThoai) {
-        this.maKH = maKH;
-        this.ten = ten;
-        this.soDienThoai = soDienThoai;
-    }
-    public String getMaKH() {
-        return maKH;
-    }
+    private String sdt;
+    private String maKH;
+    private static int dem = 1;
 
-    public void setMaKH(String maKH) {
-        this.maKH = maKH;
+    public KhachHang(String ten, String sdt) {
+        this.ten = ten;
+        this.sdt = sdt;
+        this.maKH = "KH" + String.format("%02d", dem++);
     }
 
     public String getTen() {
         return ten;
     }
 
-    public void setTen(String ten) {
+    public void setTenKH(String ten) {
         this.ten = ten;
     }
 
     public String getSoDienThoai() {
-        return soDienThoai;
+        return sdt;
     }
 
-    public void setSoDienThoai(String soDienThoai) {
-        this.soDienThoai = soDienThoai;
+    public void setSoDienThoai(String sdt) {
+        this.sdt = sdt;
     }
+
+    public String getMaKH() {
+        return maKH;
+    }
+
     public void hienThiThongTin() {
-        System.out.println("Mã KH: " + maKH);
-        System.out.println("Tên KH: " + ten);
-        System.out.println("SĐT: " + soDienThoai);
-        System.out.println("----------------------");
+        System.out.println("Mã KH: " + maKH + " - Tên: " + ten + " - SĐT: " + sdt);
     }
 }
