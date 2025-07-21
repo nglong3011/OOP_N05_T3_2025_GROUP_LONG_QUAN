@@ -1,6 +1,7 @@
 package model;
 
 public class KhachHang {
+
     private String ten;
     private String sdt;
     private String maKH;
