@@ -3,53 +3,34 @@ package model;
 import java.util.Scanner;
 import model.ListMonAn;
 import model.ListDoUong;
+import model.HoaDon;
+import model.KhachHang;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int luaChon;
 
-        do {
-            System.out.println("\n=== QUẢN LÝ QUÁN ĂN ===");
-            System.out.println("1. Gọi món ăn");
-            System.out.println("2. Gọi đồ uống");
-            System.out.println("0. Thoát");
-            System.out.print("Nhập lựa chọn: ");
+   
+        System.out.print("Nhập tên khách hàng: ");
+        String ten = sc.nextLine();
+        System.out.print("Nhập số điện thoại: ");
+        String sdt = sc.nextLine();
 
-            while (!sc.hasNextInt()) {
-                System.out.print("Vui lòng nhập số: ");
-                sc.next(); 
-            }
+        KhachHang khach = new KhachHang(ten, sdt);
+        HoaDon hoaDon = new HoaDon(khach);  
 
-            luaChon = sc.nextInt();
-            sc.nextLine(); 
+        
+        ListMonAn.goimon(sc, hoaDon);
 
-            switch (luaChon) {
-                case 1:
-                    ListMonAn.main(null); 
+       
+        System.out.print("Bạn có muốn chọn đồ uống không? (y/n): ");
+        String chonDoUong = sc.nextLine();
+        if (chonDoUong.equalsIgnoreCase("y")) {
+            ListDoUong.goidoUong(sc, hoaDon);
+        }
 
-                   
-                    System.out.print("Bạn có muốn chọn đồ uống không? (y/n): ");
-                    String chonDoUong = sc.nextLine();
-                    if (chonDoUong.equalsIgnoreCase("y")) {
-                        ListDoUong.main(null); 
-                    }
-                    break;
-
-                case 2:
-                    ListDoUong.main(args); 
-                    break;
-
-                case 0:
-                    System.out.println("Thoát chương trình.");
-                    break;
-
-                default:
-                    System.out.println("Lựa chọn không hợp lệ!");
-                    break;
-            }
-
-        } while (luaChon != 0);
+      
+        hoaDon.inHoaDon();
 
         sc.close();
     }
