@@ -16,26 +16,37 @@ public class Main {
             System.out.println("0. Thoát");
             System.out.print("Nhập lựa chọn: ");
 
-    
             while (!sc.hasNextInt()) {
                 System.out.print("Vui lòng nhập số: ");
-                sc.next();
+                sc.next(); 
             }
+
             luaChon = sc.nextInt();
             sc.nextLine(); 
 
             switch (luaChon) {
                 case 1:
-                    ListMonAn.main(null);
+                    ListMonAn.main(null); 
+
+                   
+                    System.out.print("Bạn có muốn chọn đồ uống không? (y/n): ");
+                    String chonDoUong = sc.nextLine();
+                    if (chonDoUong.equalsIgnoreCase("y")) {
+                        ListDoUong.main(null); 
+                    }
                     break;
+
                 case 2:
-                    ListDoUong.main(null);
+                    ListDoUong.main(args); 
                     break;
+
                 case 0:
                     System.out.println("Thoát chương trình.");
                     break;
+
                 default:
                     System.out.println("Lựa chọn không hợp lệ!");
+                    break;
             }
 
         } while (luaChon != 0);
@@ -43,5 +54,3 @@ public class Main {
         sc.close();
     }
 }
-
-
