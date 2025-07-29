@@ -17,7 +17,8 @@ public class ListMonAn {
     if (menu[i].getTen().equalsIgnoreCase("Xôi") || menu[i].getTen().equalsIgnoreCase("Phở bò")) {
         signature = " *Signature*";
     }
-            System.out.println((i + 1) + ". " + menu[i].getTen() + " - " + menu[i].getGia() + " VND");
+            System.out.println((i + 1) + ". " + menu[i].getTen() + signature + " - " + menu[i].getGia() + " VND");
+
         }
 
         for (int i = 0; i < menu.length; i++) {
