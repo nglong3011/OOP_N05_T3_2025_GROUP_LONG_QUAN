@@ -9,7 +9,7 @@ import model.KhachHang;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("==== Quán Ăn Long Quân ====");
    
         System.out.print("Nhập tên khách hàng: ");
         String ten = sc.nextLine();
