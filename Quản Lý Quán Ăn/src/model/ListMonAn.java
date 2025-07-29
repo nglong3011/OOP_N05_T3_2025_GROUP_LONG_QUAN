@@ -13,6 +13,10 @@ public class ListMonAn {
 
         System.out.println("\n=== MENU MÓN ĂN ===");
         for (int i = 0; i < menu.length; i++) {
+            String signature = "";
+    if (menu[i].getTen().equalsIgnoreCase("Xôi") || menu[i].getTen().equalsIgnoreCase("Phở bò")) {
+        signature = " *Signature*";
+    }
             System.out.println((i + 1) + ". " + menu[i].getTen() + " - " + menu[i].getGia() + " VND");
         }
 
